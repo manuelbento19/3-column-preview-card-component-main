@@ -1,0 +1,88 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+html,body,#root{
+    height: 100%;
+}
+body{
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+.app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.container{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgb(0 0 0 /10%);
+    overflow: hidden;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px 40px;
+}
+.first,.first a{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+}
+.second,.second a{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+.third,.third a{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+
+.card img{
+    width: 40px;
+}
+.card h1{
+    font-size: 30px;
+    font-family: "Shoulders Display";
+    color: hsl(0, 0%, 95%);
+    margin-top: 20px;
+}
+.card p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 20px;
+    line-height: 25px;
+}
+.card a{
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+    width: 150px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius:20px;
+}
+@media (max-width: 698px) {
+    .container{
+        overflow: scroll;
+        height: 100%;
+        flex-direction: column;
+    }
+}
